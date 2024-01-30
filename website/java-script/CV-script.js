@@ -90,7 +90,6 @@ fileInput.addEventListener('change', function () {
                 } else {
                     // Handle errors, e.g., display an error message to the user
                     console.error('Error uploading file. Server response:', xhr.status, xhr.statusText);
-                    // You can add additional error handling here, such as updating the UI to inform the user of the error
                 }
             }
         };
