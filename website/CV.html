@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="css/1style_root.css">
+    
+    <link rel="stylesheet" href="css/style_navbar.css">
+    <link rel="stylesheet" href="css/style_CV.css">
+    <link rel="stylesheet" href="css/style_footer.css">
+    
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Europejob job offers</title>
+</head>
+<body>
+    <my-navbar></my-navbar>
+    
+    <div class="CV">
+        
+        <form autocomplete="off" action="/sendform" method="POST" enctype="multipart/form-data">
+            <div class="CV-offer" id="selectedJob" name="selectedJob"></div>   
+            <input type="hidden" id="selectedJobInput" name="selectedJob" value="">  <!-- send selectedJob on email -->
+            
+            
+            <div class="form-group">
+                <label for="name" id="name">Name</label>
+                <input class="form-unit"  type="text" name="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname" id="surname">Surname</label>
+                <input class="form-unit"  type="text" name="surname" placeholder="Enter Your Surname" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email">E-mail</label>
+                <input class="form-unit"  type="email" name="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone" id="phone">Phone (optional)</label>
+                <input class="form-unit"  type="text" name="phone" placeholder="Enter Your Phone number">
+            </div>
+            <div class="form-group">
+                <label for="country" id="countrty">Country</label>
+                <input class="form-unit"  type="text" name="country" placeholder="Country (currently inhabited)" required>
+            </div>
+            <div class="form-group">
+                <label for="city" id="city">Miasto</label>
+                <input class="form-unit"  type="text" name="city" placeholder="City (currently inhabited)" required>
+            </div>
+            <div class="form-group">
+                <label for="citizenship" id="citizenship">Citizenship</label>
+                <input class="form-unit" type="text" name="citizenship" placeholder="What's your citizenship?" required>
+            </div>
+            <div class="form-group">
+                <label for="birth" id="birth">Date of Birth</label>
+                <input class="form-unit"  type="date" name="birth" required>
+            </div>
+            <div class="form-group">
+                <label for="sexSelect" id="sexSelectText">Gender (optional)</label>
+                <select id="sexSelect" name="sexSelect">
+                    <option id="selectOptionText" selected hidden>Select an option</option>
+                    <option value="female" id="female">Female</option>
+                    <option value="male" id="male">Male</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="visaSelect" id="visaSelectText">Is VISA needed? (optional)</label>
+                <select id="visaSelect" name="visaSelect">
+                    <option id="selectOptionText1" selected hidden value="">Select an option</option>
+                    <option value="yes" id="yes">Yes</option>
+                    <option value="no" id="no">No</option>
+                </select>
+            </div>
+            <div class="form-group-CV">
+                <label for="uploads" id="uploads">Upload your CV (optional)</label>
+                <input type="file" id="file" name="fileCV">
+                <label for="file">
+                    <span class="cloud-CV material-symbols-outlined">
+                        cloud_upload
+                        <p id="browse-file-text">Browse File to Upload</p>   
+                    </span>
+                </label>
+                <div class="progressCV progressCV-uploading">
+                    
+                    <span class="CVicon material-symbols-outlined article">
+                        description        
+                        
+                    </span>
+                    <div class="fileCVname"></div>
+                        
+                    <div class="fileCVuploading">Uploading...
+                        <span class="progressbarCVpercent">%</span>
+                    </div>
+                        
+                    <div class="progressbarCV">
+                        <progress id="progress" max="100" value="0"></progress>
+                    </div>
+
+                </div>
+                <div class="progressCV progressCV-uploaded">
+                    
+                    <span class="CVicon material-symbols-outlined article">
+                        done        
+                    </span>
+                    <div class="fileCVnameUploaded"></div>                       
+                    <div class="fileCVuploading" id="fileCVuploading">Uploaded 
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+            <div class="form-group-CV">
+                <label for="message" id="message-CV">Additional information (optional)</label>
+                <textarea name="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="rodo-container">
+            <div class="rodo-text collaps"  id="rodo-text">
+                <p id="rodo-text-1">Administratorem podanych przez Ciebie danych osobowych jest Europejob sp. z o. o., z siedzibą w Warszawie 00-116 ul.Świętokrzyska
+                    30/63. Można się z nami skontataktować pod adresem e-mail: biuro@europejob.pl. 
+                </p> 
+                <a class="collaps-btn" id="collaps-btn">Pokaż więcej</a>
+                
+                <div class="hidden">
+                <p id="rodo-text-2">1. Dane użytkownika będą przetwarzane na podstawie wyrażonej przez użytkownika zgody (checkbox). Podstawą pracowniczych 
+                    naszych działań jest art. 6 ust. 1 Rozporządzenia Ogólnego o Danych Osobowych (dalej: RODO). Użytkownik ma prawo cofnąć 
+                    zgodę przetwarzania danych w dowolnym momencie. 
+                </p>
+        
+                <p id="rodo-text-3">2. Użytkownik ma prawo do żądania dostępu do swoich danych, sprostowania, usunięcia, wniesienia sprzeciwu, 
+                    ograniczenia przetwarzania i przenoszenia. Proszę się wtedy kontakować na podany wcześniej e-mail: biuro@europejob.pl.
+                    Przysługuje użytkownikowi prawo do wniesienia skargi, gdy zostaną naruszone przepisy RODO 
+                     do Prezesa Urzędu Ochrony Danych Osobowych.
+                </p>
+        
+                <p id="rodo-text-4">3. Dane osobowe użytkownika będą przechowywane w trakcie trwania rekrutacji i trzy miesiące po jej zakończeniu.</p>
+        
+                <p id="rodo-text-5">4. Dane użytkownika mogą być ujawniane:</p>
+                    <li id="rodo-text-5-1">upoważnionym instytucjom państwowym, gdy taki obowiązek wynika z obowiązujących przepisów prawa</li>
+                    <li id="rodo-text-5-2">dostawcom zewnętrznych usług: informatycznych (hosting), poczty elektronicznej i komunikatorów cyfrowych</li>
+                    <li id="rodo-text-5-3">upoważnionym pracownikom administratora w zakresie niezbędnym do wykonania zleconych czynności</li>
+                    <li id="rodo-text-5-4">kontrahentom administratora na rzecz którego prowadzona jest rekrutacja</li>
+                    
+                <p id="rodo-text-6">5. Dane użytkownika nie będą przekazywane do krajów spoza Unii Europejskiej.</p>
+                <p id="rodo-text-7">6. Niezaakceptowanie checkboxa wiąże się z nieprzystąpieniem do procesu rekrutacji.</p>
+                <p id="rodo-text-8">7. Brak podania koniecznych danych osobowych uniemożliwia wzięcia udziału w procesie rekrutacjnym.</p>
+            </div>
+            <a class="collaps-btn-1" id="collaps-btn-1">Ukryj</a>
+            </div>
+        </div>
+            <div class="checkbox">
+                <input type="checkbox" id="check" required>
+                <label for="checkbox" id="checkbox">Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu 
+                    w celu wykorzystania ich w procesie rekrutacyjnym.
+                </label>
+            </div>
+            <div class="form-group btn-conatiner">
+                <button class="btnCV" id="send-button">Send</button>
+            </div>
+
+        </form>
+    </div>
+
+    <my-footer></my-footer>
+    
+</body>
+
+
+    
+    <script src="/website/java-script/text_html.js" type="module"></script>
+    <script src="/website/java-script/script.js" type="module"></script>
+    <script src="/website/java-script/translate.js" type="module"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/website/java-script/CV-script.js" type="module"></script>
+    
+</html>

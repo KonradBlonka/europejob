@@ -1,0 +1,38 @@
+.privacy-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.privacy-text{
+    font-size: 25px;
+    width: 80%;
+    line-height: 1.8;
+    
+}
+
+.privacy-text li:before{
+    content: "•";
+    display: inline-block;
+    margin-left: -31px;
+    min-width: 31px;
+    list-style-type: disc;
+    
+}
+
+.privacy-text li{
+    
+    list-style-position: inside;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    vertical-align: baseline;
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 50px;
+}
