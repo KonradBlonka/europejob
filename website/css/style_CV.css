@@ -46,8 +46,6 @@ input[type='file']{
 
 label[for='uploads']{
     margin-left: 5%;
-    
-    
 }
 
 label[for='file']{
@@ -288,5 +286,28 @@ label[for='message']{
     label{
         justify-content: center;
         margin-left: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    label[for='file']{
+
+        /* height: 200px;
+        width: 480px; */
+        height: 70%;
+        width: 70%;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+    label[for='file'] span{
+        font-size: 50px;
+    }
+    
+    label[for='file'] span p{
+        font-size: 15px;
+    }
+
+    label{
+        font-size: 20px;
     }
 }

@@ -266,24 +266,24 @@
     "main-job-skill-list-14-4":"Experience working on a construction site and acquiring practical skills in the profession.",
     "main-job-skill-list-14-5":"Basic knowledge of spoken Polish.",
 
-    "name": "Name",
-    "surname": "Surname",
-    "email": "E-mail",
-    "phone": "Phone number (optional)",
-    "countrty": "Countrty",
-    "city": "City",
-    "citizenship": "Citizenship",
-    "birth": "Date of Birth",
-    "sexSelectText": "Gender (optional)",
+    "name": "Name *",
+    "surname": "Surname *",
+    "email": "E-mail *",
+    "phone": "Phone number",
+    "countrty": "Countrty *",
+    "city": "City *",
+    "citizenship": "Citizenship *",
+    "birth": "Date of Birth *",
+    "sexSelectText": "Gender",
     "female": "Female",
     "male": "Male",
-    "visaSelectText": "Is VISA needed? (optional)" ,
+    "visaSelectText": "Is VISA needed?" ,
     "yes": "Yes",
     "no": "No",
-    "uploads": "Upload your CV (optional)",
+    "uploads": "Upload your CV",
     "browse-file-text": "Browse File to Upload",
     "fileCVuploading": "Uploaded",
-    "message-CV": "Additional information (optional)",
+    "message-CV": "Additional information",
     "send-button": "Send",
     "Enter Your Name": "Enter Your Name",
     
@@ -297,7 +297,7 @@
         "city": "City (currently inhabited)",
         "citizenship": "Your citizenship",
         "birth": "Date of birth",
-        "message": "Additional information (optional)"
+        "message": "Additional information"
         
       },
 
@@ -354,7 +354,7 @@
       "privacy-header-7": "7. Compliance with regulations",
       "privacy-header-8": "8. Changes to the privacy policy",
 
-      "checkbox": "I consent to the processing of my personal data contained in the form in order to use them in the recruitment process.",
-      "checkbox2": "I consent to the processing of my personal data contained in the form for contact purposes.",
+      "checkbox": "* I consent to the processing of my personal data contained in the form in order to use them in the recruitment process.",
+      "checkbox2": "* I consent to the processing of my personal data contained in the form for contact purposes.",
     "Umowa": "Contract"
 }

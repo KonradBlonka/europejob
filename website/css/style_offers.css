@@ -269,4 +269,68 @@
 .job-info-list ul{
     grid-template-columns: 1fr;
 }
+
+.main-job-role-list,
+.main-job-skill-list{
+    margin-left: 20px;
+}
+}
+
+@media(max-width: 480px){
+    .header-job-info .header-job-name h1{
+        font-size: 20px;    
+        /* było 25 */
+    }
+    .job-info-list ul li h3{
+        font-size: 15px;
+        /* 20 */
+    }
+    .job-info-list ul li span{
+        font-size: 12px;
+        /* 15 */
+    }
+
+    .main-job-role h1,
+    .main-job-skill h1{
+        font-size: 15px;
+        /* 20 */
+
+    }
+    .main-job-role-list,
+    .main-job-skill-list{
+        font-size: 10px;
+        /* 15 */
+    }   
+
+.header-job-info .apply-button-class .apply-button{
+    font-size: 15px;
+    /* 20 */
+}
+
+.job-offers .job-columns .job-cards .job-card h2{
+    font-size: 8px;
+    
+}
+
+.job-offers .job-columns .job-cards .job-card ul li{
+    font-size: 5px;
+
+}
+.job-offers .job-columns .job-cards .job-card ul li span{
+    font-size: 7px;
+}
+
+.job-info-list ul{
+    grid-template-columns: 1fr;
+}
+
+.main-job-role-list,
+.main-job-skill-list{
+    margin-left: 15px;
+}
+
+.job-offers .job-columns .job-cards .job-card{
+    padding: 10px;
+    border-radius: 10px;
+}
 }

@@ -263,24 +263,24 @@
     "main-job-skill-list-14-4":"Doświadczenie w pracy na placu budowy oraz zdobycie umiejętności praktycznych w zawodzie.",
     "main-job-skill-list-14-5":"Podstawowa znajomość języka polskiego w mowie.",
 
-    "name": "Imię",
-    "surname": "Nazwisko",
-    "email": "E-mail",
-    "phone": "Numer telefonu (opcjonalnie)",
-    "countrty": "Kraj",
-    "city": "Miasto",
-    "citizenship": "Obywatelstwo",
-    "birth": "Data urodzenia",
-    "sexSelectText": "Płeć (opcjonalnie)",
+    "name": "Imię *",
+    "surname": "Nazwisko *",
+    "email": "E-mail *",
+    "phone": "Numer telefonu",
+    "countrty": "Kraj *",
+    "city": "Miasto *",
+    "citizenship": "Obywatelstwo *",
+    "birth": "Data urodzenia *",
+    "sexSelectText": "Płeć",
     "female": "Kobieta",
     "male": "Mężczyzna",
-    "visaSelectText": "Czy potrzebna VISA? (opcjonalnie)",
+    "visaSelectText": "Czy potrzebna VISA?",
     "yes": "Tak",
     "no": "Nie",
-    "uploads": "Prześlij swoje CV (opcjonalnie)",
+    "uploads": "Prześlij swoje CV",
     "browse-file-text": "Przeglądaj plik do przesłania",
     "fileCVuploading": "Przesłany",
-    "message-CV": "Informacje dodatkowe (opcjonalnie)",
+    "message-CV": "Informacje dodatkowe",
     "send-button": "Wyślij",
     "Enter Your Name": "Wpisz ",
 
@@ -293,7 +293,7 @@
         "city": "Miasto (aktualnie zamieszkane)",
         "citizenship": "Twoje obywatelstwo",
         "birth": "Data urodzenia",
-        "message": "Dodatkowe informacje (opcjonalnie)"
+        "message": "Dodatkowe informacje"
         
       },
 
@@ -350,9 +350,9 @@
     "privacy-header-7": "7. Zgodność z przepisami",
     "privacy-header-8": "8. Zmiany w polityce prywatności",
 
-    "checkbox": "Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu w celu wykorzystania ich w procesie rekrutacyjnym.",
+    "checkbox": "* Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu w celu wykorzystania ich w procesie rekrutacyjnym.",
 
-    "checkbox2": "Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu w celu kontaktowym.",
+    "checkbox2": "* Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu w celu kontaktowym.",
 
     
 

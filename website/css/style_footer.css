@@ -94,6 +94,11 @@ hr{
     .footer_col{
         width: 50%;
     }
-    
-    
+}
+
+@media(max-width: 500px) {
+    .footer_col .logo_footer img{
+        width: 133px;
+        height: 49px;
+    }
 }
