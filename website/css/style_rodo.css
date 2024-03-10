@@ -7,9 +7,9 @@
 }
 
 .rodo-text{
-    font-size: 25px;
+    font-size: 20px;
     width: 80%;
-    line-height: 1.8;
+    line-height: 2;
     
 }
 
@@ -25,11 +25,11 @@
 .rodo-text li{
     
     list-style-position: inside;
-    margin-block-start: 1em;
+    margin-block-start: 0.5em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     vertical-align: baseline;
-    line-height: 1.2;
+    line-height: 1;
 }
